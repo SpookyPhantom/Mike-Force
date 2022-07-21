@@ -19,13 +19,13 @@ respawnButton = 1;
 respawnOnStart = -1;
 respawnTemplates[] = { "MenuPosition" };
 onPauseScript = "";
-onLoadMission = QUOT(Mike Force (VN_MF_VERSION));
+onLoadMission = QUOT(Mike Force (VN_MF_VERSION) (modified by Phantom));
 OnLoadIntro = "Welcome to Mike Force";
 loadScreen = "\vn\missions_f_vietnam\data\img\mikeforce\mission.jpg";
 OnLoadIntroTime = 0;
 OnLoadMissionTime = 0;
-briefingName = QUOT(Mike Force (VN_MF_VERSION));
-onLoadName = QUOT(Mike Force (VN_MF_VERSION));
+briefingName = QUOT(Mike Force (VN_MF_VERSION) (modified by Phantom));
+onLoadName = QUOT(Mike Force (VN_MF_VERSION) (modified by Phantom));
 overviewPicture = "\vn\missions_f_vietnam\data\img\mikeforce\mission.jpg";
 
 disabledAI = 1;
@@ -50,7 +50,9 @@ enableDebugConsole[] = {
 	//Aceb
 	"76561198022706949",
 	//dent
-	"76561198017256167"
+	"76561198017256167",
+	//Phantom,
+	"76561198013068063"
 };
 
 allowFunctionsLog = 1;
