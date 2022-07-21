@@ -28,6 +28,7 @@ else:
     content_root = Path(__file__).parent
     mission_root = content_root / "mission"
     paradigm_path = Path(user_paths.PARADIGM_PATH)
+    vendor_path = content_root / "vendor"
     map_root = content_root / "maps"
     map_folders = [ map_path for map_path in map_root.iterdir() if map_path.is_dir() ]
 
@@ -56,10 +57,11 @@ else:
         symlink_immediate_children(target_folder, mission_root)
         print("Symlinking paradigm...")
         (target_folder / "paradigm").symlink_to(paradigm_path, target_is_directory=True)
+        print("Symlinking vendor...")
+        (target_folder / "vendor").symlink_to(vendor_path, target_is_directory=True)
 
     if existing_path_found:
         print("Cannot create links in Documents/Arma 3 - existing folders found. Please delete these then try again.")
 
     input("Press any key to exit...")
     exit(1 if existing_path_found else 0)
-

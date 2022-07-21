@@ -1,4 +1,11 @@
 class Changelog {
+	class custom {
+		version = "Phantom's Changes";
+		date = "";
+		changes[] = {
+			"[New] Recruit AI from arsenal"
+		};
+	};
 	class 1_00_03 {
 		version = "1.00.03";
 		date = "13th June 2023";
@@ -22,7 +29,6 @@ class Changelog {
 			"[Change] Minor changes to bases on Khe Sanh, Cam Lao Nam and The Bra"
 		};
 	};
-	
 	class 1_00_02 {
 		version = "1.00.02";
 		date = "9th October 2022";

@@ -263,6 +263,24 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="Init";
+			expression="if !(is3DEN) then {[] call compile _value;};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="[] execVM ""vendor\bon_recruit_units\init.sqf"";";
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
@@ -2136,6 +2154,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="this addAction [[""<t color='#3dc12f'>"", ""Recruit"", ""</t><img size='2' image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_requestLeadership_ca.paa'/>""] joinString """", ""vendor\bon_recruit_units\open_dialog.sqf""];";
 						disableSimulation=1;
 					};
 					id=321;
@@ -2245,6 +2264,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="this addAction [[""<t color='#3dc12f'>"", ""Recruit"", ""</t><img size='2' image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_requestLeadership_ca.paa'/>""] joinString """", ""vendor\bon_recruit_units\open_dialog.sqf""];";
 						disableSimulation=1;
 					};
 					id=179;
@@ -12014,6 +12034,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="this addAction [[""<t color='#3dc12f'>"", ""Recruit"", ""</t><img size='2' image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_requestLeadership_ca.paa'/>""] joinString """", ""vendor\bon_recruit_units\open_dialog.sqf""];";
 						disableSimulation=1;
 					};
 					id=837;
@@ -16902,6 +16923,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="this addAction [[""<t color='#3dc12f'>"", ""Recruit"", ""</t><img size='2' image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_requestLeadership_ca.paa'/>""] joinString """", ""vendor\bon_recruit_units\open_dialog.sqf""];";
 						disableSimulation=1;
 					};
 					id=1124;
